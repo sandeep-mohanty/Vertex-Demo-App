@@ -1,0 +1,18 @@
+body {
+	background: url(../resources/skulls.png);
+	background-repeat:repeat;
+}
+#grid_area{
+	background: url(../resources/fine-concrete-pattern.png);
+	background-repeat:repeat;
+}
+
+#header{
+	background: url(../resources/fabric_of_squares_gray.png);
+	background-repeat:repeat;
+}
+
+.editor{
+	background: url(../resources/fine-concrete-pattern.png);
+	background-repeat:repeat;
+}

@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Mind Map Listing Board</title>
+		<script type="text/javascript" src="./scripts/libraries/sockjs-0.3.min.js"></script>
+		<script type="text/javascript" src="./scripts/libraries/vertxbus-2.1.js"></script>
+		<script type="text/javascript" src="./scripts/libraries/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="./scripts/libraries/d3.min.js"></script>
+		<script type="text/javascript" src="./scripts/utilities/mindmap_utils.js"></script>
+		<script type="text/javascript" src="./scripts/client/client.js"></script>
+		<script type="text/javascript" src="./scripts/client/mindmap_editor_client.js"></script>
+		<link rel="stylesheet" href="./stylesheets/style.css"></link>
+		<link rel="stylesheet" href="./stylesheets/style_d3.css"></link>
+	</head>
+	<body >
+		
+		<h2 align="center" style="color:#053363">Mind Map Listing Board</h2>
+		<form >
+			<div align="center">
+				<div id="status_message"></div>
+				<!--<h2 style="color:#053363">Available Mind Maps</h2>-->
+				<div id="grid_area" align="center"  style="height:120px; width:920px;border: 5px solid #053363;overflow-y: auto;">
+					<table  id="mindMapGrid" width="900px">
+						<tr id="header" border="3px" align="center"><th>Mind Map ID</th><th>Mind Map Name</th><th>View Mind Map</th><tr>
+					</table>
+				</div><br/>
+				<strong>Mind Map Name:   </strong><input id="mindMapName" size= "50" type="text" /><button id="add">Add Mind Map</button>
+				<h3 id="viewPort" style="color:#053363">Mind Map View & Edit Port</h3>
+				<section class="editor" align="center" style="height:450px; width:1080px;border: 5px solid #053363;overflow-y: auto;overflow-x: auto;">
+				</section>
+				
+			</div>
+		</form>
+		<section class="editor">
+		</section>
+	</body>
+</html>

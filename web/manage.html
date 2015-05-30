@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Manage Mind Maps</title>
+		<script type="text/javascript" src="./scripts/libraries/sockjs-0.3.min.js"></script>
+		<script type="text/javascript" src="./scripts/libraries/vertxbus-2.1.js"></script>
+		<script type="text/javascript" src="./scripts/libraries/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="./scripts/client/manage.js"></script>
+		<link rel="stylesheet" href="./stylesheets/style.css"></link>
+	</head>
+	<body>
+		<h1 align="center" style="color:#053363">Manage Mind Maps</h1>
+		<br/><br/>
+		<form >
+			<div align="center">
+				<div id="status_message"></div>
+				<h2 style="color:#053363">Available Mind Maps</h2>
+				<div id="grid_area"align="center"  style="height:400px; width:920px;border: 5px solid #053363;overflow-y: auto;">
+					<table  id="mindMapGrid" width="900px">
+						<tr id="header" border="3px" align="center"><th>Mind Map ID</th><th>Mind Map Title</th><th>Remove Mind Map</th><tr>
+					</table>
+				</div>
+				<h2 style="color:#053363">Add New Mind Map</h2>
+				<strong>Mind Map Name:   </strong><input id="mindMapName" size= "50" type="text" /><button id="add">Add Mind Map</button>
+			</div>
+		</form>
+	</body>
+</html>
